@@ -15,4 +15,8 @@ public class SampleDAO extends AbstractDAO{
 		return (List<Map<String, Object>>)selectList("sample.selectBoardList", map);
 	}
 
+	@SuppressWarnings("unchecked")
+	public List<Map<String, Object>> insertRegisterConfrim(Map<String, Object> map) throws Exception{
+	    return (List<Map<String, Object>>) insert("sample.insertRegister", map);
+	}
 }

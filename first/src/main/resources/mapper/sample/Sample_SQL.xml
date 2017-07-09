@@ -17,5 +17,30 @@
             ORDER BY IDX DESC
 		]]>
 	</select>
+    
+    <insert id="insertRegister" parameterType="hashmap">
+        <![CDATA[
+            INSERT INTO TB_BOARD
+                (
+                    IDX,
+                    TITLE,
+                    CONTENTS,
+                    HIT_CNT,
+                    DEL_GB,
+                    CREA_DTM,
+                    CREA_ID
+                )
+            VALUES
+                (
+                    SEQ_TB_BOARD_IDX.NEXTVAL,
+                    '제목1',
+                    '내용1',
+                    3,
+                    'N',
+                    SYSDATE,
+                    '동공'
+                )
+        ]]>
+    </insert>
 	
 </mapper>
