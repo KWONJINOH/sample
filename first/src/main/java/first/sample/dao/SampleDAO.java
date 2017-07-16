@@ -11,12 +11,19 @@ import first.common.dao.AbstractDAO;
 public class SampleDAO extends AbstractDAO{
 
 	@SuppressWarnings("unchecked")
-	public List<Map<String, Object>> selectBoardList(Map<String, Object> map) throws Exception{
-		return (List<Map<String, Object>>)selectList("sample.selectBoardList", map);
+	public List<Map<String, Object>> selectBoardList() throws Exception{
+		return (List<Map<String, Object>>)selectList("sample.selectBoardList", null);
 	}
 
-	@SuppressWarnings("unchecked")
-	public List<Map<String, Object>> insertRegisterConfrim(Map<String, Object> map) throws Exception{
-	    return (List<Map<String, Object>>) insert("sample.insertRegister", map);
+	public void insertRegisterConfrim(Map<String, Object> map) throws Exception{
+	    insert("sample.insertRegister", map);
+	}
+	
+	public void updateRegisterConfrim (Map<String, Object> map) throws Exception {
+	    update("smaple.updateRegister", map);
+	}
+	
+	public void deleteRegisterConfrim (Map<String, Object> map) throws Exception {
+	    delete("sample.remove", map);
 	}
 }

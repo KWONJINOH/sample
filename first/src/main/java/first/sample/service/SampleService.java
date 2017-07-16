@@ -12,7 +12,7 @@ public interface SampleService {
      * @return 조회목록
      * @throws Exception
      */
-	List<Map<String, Object>> selectBoardList(Map<String, Object> map) throws Exception;
+	List<Map<String, Object>> selectBoardList() throws Exception;
 	
 	/**
 	 * 게시물 등록
@@ -21,6 +21,22 @@ public interface SampleService {
 	 * @return 등록
 	 * @throws Exception
 	 */
-	List<Map<String, Object>> insertRegisterConfrim(Map<String, Object> map) throws Exception;
+	void insertRegisterConfrim(Map<String, Object> map) throws Exception;
+	
+	/**
+	 * 게시판 수정
+	 * 
+	 * @param map
+	 * @throws Exception
+	 */
+	void updateRegisterConfrim(Map<String, Object> map) throws Exception;
+	
+	/**
+	 * 게시판 삭제
+	 * 
+	 * @param map
+	 * @throws Exception
+	 */
+	void deleteRegisterConfrim(Map<String, Object> map) throws Exception;
 	
 }

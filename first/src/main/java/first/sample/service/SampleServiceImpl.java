@@ -18,14 +18,26 @@ public class SampleServiceImpl implements SampleService{
 	private SampleDAO sampleDAO;
 	
 	@Override
-	public List<Map<String, Object>> selectBoardList(Map<String, Object> map) throws Exception {
+	public List<Map<String, Object>> selectBoardList() throws Exception {
 
-	    return sampleDAO.selectBoardList(map);
+	    return sampleDAO.selectBoardList();
 	}
 
     @Override
-    public List<Map<String, Object>> insertRegisterConfrim(Map<String, Object> map) throws Exception {
+    public void insertRegisterConfrim(Map<String, Object> map) throws Exception {
         
-        return sampleDAO.insertRegisterConfrim(map);
+        sampleDAO.insertRegisterConfrim(map);
+    }
+
+    @Override
+    public void updateRegisterConfrim(Map<String, Object> map) throws Exception {
+
+        sampleDAO.updateRegisterConfrim(map);
+    }
+
+    @Override
+    public void deleteRegisterConfrim(Map<String, Object> map) throws Exception {
+
+        sampleDAO.deleteRegisterConfrim(map);
     }
 }
