@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+<%@ page language="java" contentType="text/html" pageEncoding="utf-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <html lang="ko">
@@ -25,15 +25,60 @@
     
     <body>
         <header>
-        
+            <!-- gird -->
+            <div class="container">
+                <h1 align="center">엘리스 리신</h1>
+                <div class="row">
+                    <div class="col-md-3">
+                        <input type="text" placeholder="아이디를 입력하세요" />
+                        <input type="password" placeholder="패스워드를  입력하세요"/>
+                        <input type="button" value="로그인">
+                    </div>
+                    <div class="col-md-9">
+                    여기 뭐넣지
+                    </div>
+                </div>
+            </div>
+            <!-- // grid -->
         </header>
         
-        <section>
         
+        <!-- TODO nav 위치 잡아야함. -->
+        <!-- 왼쪽 메뉴 목록 -->
+        <nav>
+            <div class="container">
+                <div class="row">
+                    <div>
+                        <p>test<p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- // 왼쪽 메뉴 목록 -->
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <!-- 포인트랭킹 -->
+                    <div class="col-md-6">
+                        <div>
+                            <p>test<p>
+                        </div>
+                    </div>
+                    <!-- // 포인트랭킹 -->
+                    
+                    
+                    <!-- 자유게시판 -->
+                    <div class="col-md-6">
+                        <div>
+                            <p>test<p>
+                        </div>
+                    </div>
+                    <!-- // 자유게시판 -->
+                </div>
+            </div>
         </section>
         
-        <footer>
-        
-        </footer>
     </body>
+    
 </html>
