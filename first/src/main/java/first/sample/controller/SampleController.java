@@ -33,6 +33,19 @@ public class SampleController {
 	 * @return
 	 * @throws Exception
 	 */
+	@RequestMapping(value="/index.do")
+	public ModelAndView index(Map<String,Object> commandMap) throws Exception{
+	    
+	    ModelAndView mv = new ModelAndView("/index");
+	    
+	    return mv;
+	}
+	/**
+	 * 게시판을 조회한다.
+	 * 
+	 * @return
+	 * @throws Exception
+	 */
 	@RequestMapping(value="/sample/openSampleBoardList.do")
     public ModelAndView openSampleBoardList(Map<String,Object> commandMap) throws Exception{
 
