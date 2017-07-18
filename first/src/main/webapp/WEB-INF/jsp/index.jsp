@@ -1,84 +1,130 @@
-<%@ page language="java" contentType="text/html" pageEncoding="utf-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
-<html lang="ko">
-
-    <head>
-        <title>index</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="${pageContext.request.contextPath }/libs/js/etc.js" > </script>
-        
-        <!-- boostrap3 라이브러리 -->
-        <script src="${pageContext.request.contextPath }/libs/js/bootstrap.min.js" > </script>
-        <!-- jquery 라이브러리 -->
-        <script src="${pageContext.request.contextPath }/libs/js/jquery-3.2.1.min.js" > </script>
-        
-        <!-- css 라이브러리 -->
-        <!-- min은 알겟는데 map은 필요한건지? -->
-        <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath }/libs/css/bootstrap.min.css" />
-        <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath }/libs/css/bootstrap.min.css.map" />
-        <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath }/libs/css/bootstrap-theme.min.css" />
-        <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath }/libs/css/bootstrap-theme.min.map.css" />
-        
-    </head>
+<html lang="utf-8">
+<head>
+<meta charset="utf-8">
+<title>SB Admin 2 - Bootstrap Admin Theme</title>
+<!-- MetisMenu CSS -->
+<link href="${pageContext.request.contextPath}/libs/css/metisMenu.min.css" rel="stylesheet">
+<!-- Custom CSS -->
+<link href="${pageContext.request.contextPath}/libs/css/sb-admin-2.min.css" rel="stylesheet">
+<!-- jquery 라이브러리 -->
+<script src="${pageContext.request.contextPath}/libs/js/jquery-3.2.1.min.js">
     
-    <body>
-        <header>
-            <!-- gird -->
-            <div class="container">
-                <h1 align="center">엘리스 리신</h1>
-                <div class="row">
-                    <div class="col-md-3">
-                        <input type="text" placeholder="아이디를 입력하세요" />
-                        <input type="password" placeholder="패스워드를  입력하세요"/>
-                        <input type="button" value="로그인">
-                    </div>
-                    <div class="col-md-9">
-                    여기 뭐넣지
-                    </div>
-                </div>
+</script>
+<!-- Metis Menu Plugin JavaScript -->
+<script src="${pageContext.request.contextPath}/libs/js/metisMenu.min.js"></script>
+<!-- Morris Charts JavaScript -->
+<script src="${pageContext.request.contextPath}/libs/js/raphael.min.js"></script>
+<script src="${pageContext.request.contextPath}/libs/js/morris.min.js"></script>
+<script src="${pageContext.request.contextPath}/libs/js/morris-data.js"></script>
+<!-- Custom Theme JavaScript -->
+<script src="${pageContext.request.contextPath}/libs/js/sb-admin-2.js"></script>
+<!-- Custom Fonts -->
+<link href="${pageContext.request.contextPath}/libs/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<!-- boostrap3 라이브러리 -->
+<script src="${pageContext.request.contextPath}/libs/js/bootstrap.min.js">
+    
+</script>
+<!-- css 라이브러리 -->
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath }/libs/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath }/libs/css/bootstrap-theme.min.css" />
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div id="wrapper">
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">show me the money</a>
             </div>
-            <!-- // grid -->
-        </header>
-        
-        
-        <!-- TODO nav 위치 잡아야함. -->
-        <!-- 왼쪽 메뉴 목록 -->
-        <nav>
-            <div class="container">
-                <div class="row">
-                    <div>
-                        <p>test<p>
-                    </div>
+            <!-- /.navbar-header -->
+            <ul class="nav navbar-top-links navbar-right">
+            </ul>
+            <!-- /.navbar-top-links -->
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav in magin top 100px" id="side-menu">
+                        <li><a href="index.html" class="active"><i class="fa fa-dashboard fa-fw"></i> RANKING</a></li>
+                        <li><a href="index.html" class="active"><i class="fa fa-dashboard fa-fw"></i> BOARD</a></li>
+                        <li><a href="index.html" class="active"><i class="fa fa-dashboard fa-fw"></i> QUIZ</a></li>
+                    </ul>
                 </div>
+                <!-- /.sidebar-collapse -->
             </div>
+            <!-- /.navbar-static-side -->
         </nav>
-        <!-- // 왼쪽 메뉴 목록 -->
+        <!-- 컨텐츠 영역 -->
+        <div id="page-wrapper" style="min-height: 1395px;">
+            <div class="row">
+                <div class="col-sm-6">
+                <h2>RANKING</h2>
+                    <table class="table table-bordered table-hover table-response">
+                        <thead>
+                            <tr>
+                                <th>FirstName</th>
+                                <th>Lastname</th>
+                                <th>Email</th>
+                            </tr>
+                        </thead>
+                        
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td>Doe</td>
+                                <td>john@example.com</td>
+                            </tr>
+                            <tr>
+                                <td>Mary</td>
+                                <td>Moe</td>
+                                <td>mary@example.com</td>
+                             </tr>
+                             <tr>
+                                <td>July</td>
+                                <td>Dooly</td>
+                                <td>adfafasdfadf</td>
+                             </tr>
+                             
+                        </tbody>
+                        
+                    </table>
 
-        <section>
-            <div class="container">
-                <div class="row">
-                    <!-- 포인트랭킹 -->
-                    <div class="col-md-6">
-                        <div>
-                            <p>test<p>
-                        </div>
-                    </div>
-                    <!-- // 포인트랭킹 -->
-                    
-                    
-                    <!-- 자유게시판 -->
-                    <div class="col-md-6">
-                        <div>
-                            <p>test<p>
-                        </div>
-                    </div>
-                    <!-- // 자유게시판 -->
+                </div>
+                
+                <div class="col-sm-6">
+                <h2>BOARD</h2>
+                    <table class="table table-bordered table-hover table-response">
+                        <thead>
+                            <tr>
+                                <th>Firstname</th>
+                                <th>Lastname</th>
+                                <th>Email</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>John</td>
+                                <td>Doe</td>
+                                <td>john@example.com</td>
+                            </tr>
+                            <tr>
+                                <td>Mary</td>
+                                <td>Moe</td>
+                                <td>mary@example.com</td>
+                            </tr>
+                            <tr>
+                                <td>July</td>
+                                <td>Dooley</td>
+                                <td>july@example.com</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
-        </section>
-        
-    </body>
-    
+        </div>
+    </div>
+</body>
 </html>
