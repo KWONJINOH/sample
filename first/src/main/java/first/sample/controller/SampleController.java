@@ -49,7 +49,7 @@ public class SampleController {
 	@RequestMapping(value="/sample/openSampleBoardList.do")
     public ModelAndView openSampleBoardList(Map<String,Object> commandMap) throws Exception{
 
-	    ModelAndView mv = new ModelAndView("/sample/boardList");
+	    ModelAndView mv = new ModelAndView("/member/member_login");
     	
     	List<Map<String,Object>> list = sampleService.selectBoardList();
     	
