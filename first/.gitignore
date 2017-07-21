@@ -1,1 +1,22 @@
 /target/
+
+### Eclipse ###
+
+.metadata
+bin/
+tmp/
+local.properties
+.settings/
+.loadpath
+*.properties
+
+### Eclipse Patch ###
+# Eclipse Core      
+.project
+
+# JDT-specific (Eclipse Java Development Tools)     
+.classpath
+
+### Java ###
+# Compiled class file
+*.class
