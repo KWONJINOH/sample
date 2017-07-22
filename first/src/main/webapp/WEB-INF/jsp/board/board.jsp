@@ -32,8 +32,8 @@
                                             <td>${row.BO_NUM }</td>
                                             <td>${row.BO_TIT}</td>
                                             <td>${row.BO_HIT }</td>
-                                            <td>${row.BO_REGDATE }</td>
-                                            <td>${row.USER_NAME }</td>
+                                            <td>${row.BO_REG_DATE }</td>
+                                            <td>${row.USER_NM }</td>
                                         </tr>
                                     </c:forEach>
                                 </c:when>

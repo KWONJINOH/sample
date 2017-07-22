@@ -9,45 +9,8 @@
             SELECT 
                     *
             FROM TB_BOARD BOARD
-            JOIN TB_MEMBER MEMBER ON BOARD.BO_NUM = MEMBER.USER_NUM;
+            JOIN TB_MEMBER MEMBER ON BOARD.USER_ID = MEMBER.USER_ID;
         ]]>
     </select>
-    
-    <select id="selectBoardList" parameterType="hashmap" resultType="hashmap">
-        <![CDATA[
-            SELECT 
-                    *
-            FROM TB_BOARD BOARD
-                JOIN TB_MEMBER MEMBER ON BOARD.BO_NUM = MEMBER.USER_NUM
-                WHERE USER_ID = ${USER_ID};
-        ]]>
-    </select>
-    
-    <insert id="insertRegister" parameterType="hashmap">
-     INSERT INTO TB_BOARD (BO_TIT, BO_CTNT, BO_HIT, BO_REGDATE, USER_NUM)
-     VALUES
-        (
-        #{boTit},
-        #{boCtnt},
-        #{boHit}
-        #{boRegDate}
-        #{userId}
-        )
-    </insert>
-    
-    <update id="updateRegister" parameterType="hashmap">
-        UPDATE 
-            TB_BOARD 
-        SET 
-            BO_TIT =#{boTit},
-            BO_CTNT = #{boCtnt},
-            BO_HIT=#{boHit} 
-            BO_REG_DATE=#{boRegDate} 
-        WHERE BO_NUM = #{boNum}
-    </update>
-    
-    <delete id="remove" parameterType="hashmap">
-        DELETE FROM TB_BOARD WHERE BONUM = #{BONUM}
-    </delete>
     
 </mapper>
