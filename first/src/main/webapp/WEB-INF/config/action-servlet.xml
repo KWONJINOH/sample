@@ -10,12 +10,6 @@
 
     <context:component-scan base-package="first"></context:component-scan>
     
-<!--     <mvc:annotation-driven> -->
-<!--         <mvc:argument-resolvers> -->
-<!--             <bean class="first.common.resolver.CustomMapArgumentResolver"></bean>        -->
-<!--         </mvc:argument-resolvers> -->
-<!--     </mvc:annotation-driven> -->
-
     <mvc:interceptors>
         <mvc:interceptor>
             <mvc:mapping path="/**"/>
@@ -26,7 +20,6 @@
     <bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping"/>
     
     <bean class="org.springframework.web.servlet.view.BeanNameViewResolver" p:order="0" />
-<!--     <bean id="jsonView" class="org.springframework.web.servlet.view.json.MappingJacksonJsonView" />     -->
     
     <bean
         class="org.springframework.web.servlet.view.UrlBasedViewResolver" p:order="1" 
