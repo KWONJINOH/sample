@@ -28,8 +28,5 @@
         p:prefix="/WEB-INF/jsp/" p:suffix=".jsp">
     </bean>
     
-    <bean id="Board" class="first.spring.board.vo" />
-    <bean id="Comment" class="first.spring.board.vo" />
-    <bean id="Member" class="first.spring.member.vo" />
-    <bean id="Quiz" class="first.spring.quiz.vo" />
+
 </beans>

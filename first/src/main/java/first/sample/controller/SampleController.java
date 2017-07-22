@@ -40,6 +40,7 @@ public class SampleController {
 	    
 	    return mv;
 	}
+	
 	/**
 	 * 게시판을 조회한다.
 	 * 
@@ -49,7 +50,7 @@ public class SampleController {
 	@RequestMapping(value="/sample/openSampleBoardList.do")
     public ModelAndView openSampleBoardList(Map<String,Object> commandMap) throws Exception{
 
-	    ModelAndView mv = new ModelAndView("/member/member_login");
+	    ModelAndView mv = new ModelAndView("/board/board");
     	
     	List<Map<String,Object>> list = sampleService.selectBoardList();
     	
@@ -139,7 +140,6 @@ public class SampleController {
     	     */
     	    Map<String, Object> map = new HashMap<String, Object>();
     	    
-    	    // TODO 키값을 가져와야하는데 키값을 어캐 가져와야하지??
     	    map.put("BONUM", bonum);
     	    map.put("BOTITLE", botitle);
     	    map.put("USER_NAME", userName);

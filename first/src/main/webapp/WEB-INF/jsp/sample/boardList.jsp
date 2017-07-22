@@ -45,10 +45,10 @@
                             <c:when test="${fn:length(list) > 0}">
                                 <c:forEach items="${list }" var="row" varStatus="status" >
                                     <tr>
-                                        <td>${row.BONUM }</td>
-                                        <td>${row.BOTITLE}</td>
-                                        <td>${row.HIT }</td>
-                                        <td>${row.CONTENT }</td>
+                                        <td>${row.boNum }</td>
+                                        <td>${row.boTit}</td>
+                                        <td>${row.boHit }</td>
+                                        <td>${row.boRegDate }</td>
                                         <td><input type="button" id="update${status.index}" value="수정" onclick="update(${row.BONUM })"></td>
                                         <td><input type="button" id="remove${status.index}"  value="삭제" onclick="remove(${row.BONUM })"></td>
                                     </tr>

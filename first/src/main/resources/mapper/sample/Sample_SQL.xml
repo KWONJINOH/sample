@@ -6,8 +6,9 @@
 	<select id="selectBoardList" parameterType="hashmap" resultType="hashmap">
 		<![CDATA[
             SELECT 
-                *
-            FROM TB_BOARD
+                    *
+            FROM TB_BOARD BOARD
+            JOIN TB_MEMBER MEMBER ON BOARD.BO_NUM = MEMBER.USER_NUM;
 		]]>
 	</select>
     
