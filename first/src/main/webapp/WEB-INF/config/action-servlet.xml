@@ -17,6 +17,7 @@
         </mvc:interceptor>
     </mvc:interceptors>
     
+    
     <bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping"/>
     
     <bean class="org.springframework.web.servlet.view.BeanNameViewResolver" p:order="0" />
@@ -26,4 +27,9 @@
         p:viewClass="org.springframework.web.servlet.view.JstlView" 
         p:prefix="/WEB-INF/jsp/" p:suffix=".jsp">
     </bean>
+    
+    <bean id="Board" class="first.spring.board.vo" />
+    <bean id="Comment" class="first.spring.board.vo" />
+    <bean id="Member" class="first.spring.member.vo" />
+    <bean id="Quiz" class="first.spring.quiz.vo" />
 </beans>
