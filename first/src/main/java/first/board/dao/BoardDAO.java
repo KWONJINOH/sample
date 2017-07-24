@@ -33,7 +33,7 @@ public class BoardDAO extends AbstractDAO{
      * @throws Exception
      */
 	public void insertRegisterConfrim(Map<String, Object> map) throws Exception{
-	    insert("sample.insertRegister", map);
+	    insert("board.insertRegister", map);
 	}
 	
 	/**
@@ -43,7 +43,7 @@ public class BoardDAO extends AbstractDAO{
 	 * @throws Exception
 	 */
 	public void updateRegisterConfrim (Map<String, Object> map) throws Exception {
-	    update("sample.updateRegister", map);
+	    update("board.updateRegister", map);
 	}
 	
 	/**
@@ -53,6 +53,6 @@ public class BoardDAO extends AbstractDAO{
 	 * @throws Exception
 	 */
 	public void deleteRegisterConfrim (Map<String, Object> map) throws Exception {
-	    delete("sample.remove", map);
+	    delete("board.remove", map);
 	}
 }

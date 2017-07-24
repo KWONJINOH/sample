@@ -2,7 +2,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <!-- <head>영역 -->
-<%@ include file="/WEB-INF/inc/header.jsp"%>
+<%@ include file="/WEB-INF/inc/head.jsp"%>
 <body>
     <div id="wrapper">
         <!-- 메뉴 영역  -->
@@ -46,6 +46,15 @@
                         </tbody>
                     </table>
                 </div>
+                
+                <div class="col-sm-12 pull-right">
+                    <a href="${pageContext.request.contextPath}/board/removeConfirm.do" class="pull-right btn btn-danger">삭제하기</a>
+                    <a href="${pageContext.request.contextPath}/board/update.do" class="pull-right btn btn-warning">수정하기</a>
+                    <a href="${pageContext.request.contextPath}/board/register.do" class="pull-right btn btn-primary">등록하기</a>
+                </div>
+                
             </div>
         </div>
+        
 </body>
+</html>

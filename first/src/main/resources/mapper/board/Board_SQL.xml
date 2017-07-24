@@ -13,4 +13,19 @@
         ]]>
     </select>
     
+    <insert id="insertRegister" parameterType="hashmap">
+        <![CDATA[
+            INSERT INTO TB_BOARD (
+                                                      BO_TIT
+                                                    , BO_CTNT
+                                                    , USER_ID
+                                                ) 
+                                    VALUES (
+                                                      #{boTit}
+                                                    , #{boCtnt}
+                                                    , #{userId}
+                                                );
+        ]]>
+    </insert>
+    
 </mapper>

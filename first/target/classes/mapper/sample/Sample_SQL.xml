@@ -13,13 +13,16 @@
 	</select>
     
     <insert id="insertRegister" parameterType="hashmap">
-         INSERT INTO TB_BOARD (BOTITLE, USER_NAME, CONTENT)
-         VALUES
-            (
-            #{BOTITLE},
-            #{USER_NAME},
-            #{BOCONTENT}
-            )
+        <![CDATA[
+            INSERT INTO TB_BOARD (
+                                                      BO_TIT
+                                                    , BO_CTNT
+                                                )
+                                    VALUES (
+                                                      #{boTit}
+                                                    , #{boCtnt}
+                                                );
+        ]]>
     </insert>
     
     <update id="updateRegister" parameterType="hashmap">

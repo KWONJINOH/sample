@@ -3,7 +3,7 @@
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 
 <!-- <head>영역 -->
-<%@ include file="/WEB-INF/inc/header.jsp" %>
+<%@ include file="/WEB-INF/inc/head.jsp" %>
 
 <body>
         <%@ include file="/WEB-INF/inc/nav.jsp" %>

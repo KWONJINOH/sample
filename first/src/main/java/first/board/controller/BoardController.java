@@ -69,15 +69,15 @@ public class BoardController {
      * @throws Exception
      */
     @RequestMapping(value="/board/registerConfirm.do")
-    public ModelAndView registerConfirm(@RequestParam(value="subject", required=false) String botitle, 
-        @RequestParam(value="user_name", required= false) String userName, 
-        @RequestParam(value="content", required=false) String content) throws Exception{
+    public ModelAndView registerConfirm(@RequestParam(value="boTit", required=false) String boTit, 
+        @RequestParam(value="boCtnt", required= false) String boCtnt
+        ,@RequestParam(value="userId", required= false) String userId) throws Exception{
         
             Map<String, Object> map = new HashMap<String, Object>();
             
-            map.put("BOTITLE", botitle);
-            map.put("USER_NAME", userName);
-            map.put("CONTENT", content);
+            map.put("BO_TIT", boTit);
+            map.put("USER_ID", userId);
+            map.put("BO_CTNT", boCtnt);
             
             // insert는 리턴값이 필요가 없으므로 결과값을 받지 않는다.
             boardService.insertRegisterConfrim(map);

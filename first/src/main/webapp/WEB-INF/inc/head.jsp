@@ -4,6 +4,9 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
 <title>퀴즈</title>
 <!-- MetisMenu CSS -->
 <link href="${pageContext.request.contextPath}/libs/css/metisMenu.min.css" rel="stylesheet">
@@ -24,6 +27,9 @@
 <!-- boostrap3 라이브러리 -->
 <script src="${pageContext.request.contextPath}/libs/js/bootstrap.min.js"></script>
 
+<!-- CKEditor -->
+<script src="http://cdn.ckeditor.com/4.4.7/standard/ckeditor.js"></script>
+
 <!-- css 라이브러리 -->
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath }/libs/css/bootstrap.min.css" />
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath }/libs/css/bootstrap-theme.min.css" />
@@ -34,7 +40,8 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif] -->
 <!--  -->
-<link href="${pageContext.request.contextPath}/member/css/member_login.css" rel="stylesheet">
-<script src="${pageContext.request.contextPath}/member/js/member_login.js"></script>
+
+<link href="${pageContext.request.contextPath}/user/member/css/member_login.css" rel="stylesheet">
+<script src="${pageContext.request.contextPath}/user/member/js/member_login.js"></script>
 
 </head>
